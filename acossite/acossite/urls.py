@@ -20,3 +20,4 @@ urlpatterns = [
     path('app/', include('acosapp.urls')),
     path('admin/', admin.site.urls),
 ]
+
