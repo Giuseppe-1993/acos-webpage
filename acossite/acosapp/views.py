@@ -6,4 +6,4 @@ from django.http import HttpResponse
 #     return HttpResponse('Hello, World!')
 
 def index(request):
-    return render(request, 'index.html')
+    return render(request, 'acosapp/index.html')

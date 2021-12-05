@@ -1,0 +1,37 @@
+* {
+    font-family: "Reader Pro", sans-serif;
+    margin: 0;
+    padding: 0;
+    -sizing: border-;
+    letter-spacing: 2px;
+  }
+
+  .home-page {
+    height: 100vh;
+    background: cornflowerblue;
+  }
+
+  .main-header {
+    display: flex;
+    text-transform: uppercase;
+    background: rgb(189, 134, 128);
+    justify-content: space-between;
+    padding: 4rem;
+  }
+
+  
+  .nav-bar {
+    text-transform: uppercase;
+    background-color: royalblue;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px;
+  }
+
+  .nav-button {
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+    margin: 0 15px;
+  }
+
+  
