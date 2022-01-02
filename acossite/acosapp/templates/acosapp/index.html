@@ -6,53 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>A Cup of Science</title>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/cesiumjs/1.78/Build/Cesium/Cesium.js"></script> -->
+  
     {% load static %}
+    <link rel="stylesheet" href="{% static 'acosapp/navbar.css'%}" />
     <link rel="stylesheet" href="{% static 'acosapp/home.css'%}" />
-    <!-- <link rel="stylesheet" href="static/acosapp/home.css"> -->
+    <script src="http://code.jquery.com/jquery-1.6.1.min.js"></script>
+    <script></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <meta name="viewport" contet="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200&display=swap" rel="stylesheet">
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            
+            $(".toggle").on("click", function(){
+                // function: we listen when the toggle menu is clicked
+                if($(".item").hasClass("active")) {
+                    // if the item has the class active, Remove it
+                    $(".item").removeClass("active");
+        
+                }
+                else{
+                    // otherwise, add the class, meaning the toggle is active
+                    $(".item").addClass("active");
+                }
+            })
+        
+        });
+    </script>
 </head>
+
 <body>
-    <nav class="nav-bar">
-        <div class="logo"><h2>A cup of science</h2></div>
-        <ul>
-            <li><a href="" class="nav-button nav-about">About</a></li>
-            <li>
-                <a href="" class="nav-button nav-seasons">Season
-                </a>
-                <ul>
-                    <li><a href="">Consciousnes
-                    </a></li>
-                </ul>
-            </li> 
-            <li><a href="" class="nav-button nav-support">Support us</a></li>
-            <li><a href="" class="nav-button nav-contacts">Contact us</a></a></li>
+
+    <nav>
+        <ul class="menu">
+            <li class="logo"><a href="#">A Cup of Science</a></li>
+            <li class="item"><a href="#">Home</a></li>
+            <li class="item button primary"><a href="#">Seasons</a></li>
+            <li class="item"><a href="#">Support Us</a></li>
+            <li class="item"><a href="#">Contact Us</a></li>
+            <li class="toggle"><span class="bars"></span></li>
         </ul>
     </nav>
 
+   
 
 
-
-
-
-
-
-
-
-
-    <div class="container">
-
-        <section class="home-page">
-
-            <header class='main-header'>
-                
-                
-            </header>
-
-        </section>
-    </div>
 </body>
 </html>

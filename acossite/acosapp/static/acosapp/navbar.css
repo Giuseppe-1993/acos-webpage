@@ -1,0 +1,200 @@
+:root {
+    --navcolor: #222;
+}
+
+
+* {
+    font-family: "Reader Pro", sans-serif;
+    font-size: 1rem;
+    color: black;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    background: rgb(191, 209, 207);
+}
+
+nav {
+    background: #222;
+    padding: 5px 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.menu li {
+    font-size: 16px;
+    padding: 15px 5px;
+
+}
+
+.menu li a {
+    display: block;
+}
+
+.logo a {
+    font-size: 20px;
+}
+
+.item.primary {
+    border-bottom: 1px #444 solid;
+}
+
+/* Mobile Menu */
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toggle {
+    order: 1;
+}
+
+.item.primary {
+    order:2
+}
+
+.item {
+    width: 100%;
+    text-align: center;
+    order: 3;
+    display: none;
+}
+
+/* javascript is needed to add this class dynamically to all items when we click on the hamburger menu*/
+.item.active {
+    display: block;
+}
+
+
+
+
+.toggle {
+    /* so that we have the pointer when we are on the menu */
+    cursor: pointer;
+}
+
+.bars {
+    background: #999;
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    width: 18px;
+}
+
+.bars::before, .bars::after {
+    background: #999;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: absolute;
+    width: 18px;
+}
+
+.bars::before {
+    top: 5px;
+}
+
+.bars::after {
+    top: -5px;
+}
+
+/*  Tablet Menu */
+
+@media all and (min-width: 468px) {
+    .menu {
+        justify-content: center;
+
+    }
+
+    .logo {
+        flex: 1;
+    }
+
+    .item.button {
+        width: auto;
+        order: 1;
+        display: block;
+        border: 0;
+    }
+
+    .item.button a {
+        padding: 7px 15px;
+        margin-right: 1rem;
+        background: rgb(0, 128, 128);
+       
+    }
+
+    .toggle {
+        order: 2;
+    }
+
+    .button a:hover {
+        transition: all .25s;
+        background: white;
+        text-decoration: none;
+    }
+
+}
+
+/* Desktop Menu */
+@media all and (min-width: 768px) {
+    
+    .item {
+        display: block;
+        width: auto;
+    }
+
+    .toggle {
+        display: none;
+    }
+
+    .logo {
+        order: 0;
+    }
+
+    .item {
+        order: 1;
+    }
+
+    .button {
+        order: 1;
+    }
+
+    .item.button a {
+        margin: 0;  
+    }
+
+    .menu li {
+        padding: 15px 10px;
+    }
+
+    .menu li.button {
+        padding-right: 0;
+    }
+
+    /* add the style to make this a dropdown button */
+    .item.button a {
+       
+        border-radius: 0;
+        border: 0;
+        background: none;
+    }
+
+
+}
