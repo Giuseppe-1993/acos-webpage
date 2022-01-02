@@ -1,25 +1,23 @@
 :root {
-    --navcolor: #222;
+    --navcolor: rgb(255, 255, 255);
+    --themecolor1: #EAE7DC;
+    --themecolor3: #ddcfb7;
+    --themecolor4: #ECECEC;
+    --buttoncolor: #5C2018;
+    --offwhite: #FAF9F6;
 }
 
 
-* {
-    font-family: "Reader Pro", sans-serif;
-    font-size: 1rem;
-    color: black;
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
 
-}
 
 body {
-    background: rgb(191, 209, 207);
+    background: var(white);
 }
 
 nav {
-    background: #222;
-    padding: 5px 20px;
+    background: var(--themecolor1);
+    padding: 15px 40px;
+    
 }
 
 ul {
@@ -27,8 +25,9 @@ ul {
 }
 
 a {
-    color: white;
+    color: black;
     text-decoration: none;
+    
 }
 
 a:hover {
@@ -46,7 +45,9 @@ a:hover {
 }
 
 .logo a {
-    font-size: 20px;
+    font-size: 40px;
+    font-weight: 900;
+
 }
 
 .item.primary {
@@ -63,7 +64,10 @@ a:hover {
 
 .toggle {
     order: 1;
+    
 }
+
+
 
 .item.primary {
     order:2
@@ -81,16 +85,13 @@ a:hover {
     display: block;
 }
 
-
-
-
 .toggle {
     /* so that we have the pointer when we are on the menu */
     cursor: pointer;
 }
 
 .bars {
-    background: #999;
+    background: black;
     display: inline-block;
     height: 2px;
     position: relative;
@@ -98,7 +99,7 @@ a:hover {
 }
 
 .bars::before, .bars::after {
-    background: #999;
+    background: black;
     content: "";
     display: inline-block;
     height: 2px;
@@ -134,9 +135,11 @@ a:hover {
     }
 
     .item.button a {
-        padding: 7px 15px;
+        padding: 10px 15px;
         margin-right: 1rem;
-        background: rgb(0, 128, 128);
+        background: var(--buttoncolor);
+        color: white;
+        border-radius: 50em;
        
     }
 
@@ -147,17 +150,29 @@ a:hover {
     .button a:hover {
         transition: all .25s;
         background: white;
+        color: var(--buttoncolor);
         text-decoration: none;
+        border: 1px solid var(--buttoncolor);
     }
 
 }
 
 /* Desktop Menu */
 @media all and (min-width: 768px) {
+
+
+    .menu {
+        margin: 0 5rem;
+    }
+
+    .item a {
+        font-size: 20px;
+    }
     
     .item {
         display: block;
         width: auto;
+        
     }
 
     .toggle {
@@ -194,6 +209,7 @@ a:hover {
         border-radius: 0;
         border: 0;
         background: none;
+        color: black;
     }
 
 
