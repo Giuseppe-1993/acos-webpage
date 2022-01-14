@@ -14,49 +14,24 @@ h2 {
 }
 
 
-
-/* .home-page {
-    display: grid;
-    
-} */
-
-/* .autogrid {
-
-    --auto-grid-min-size: 45rem;
-
-    display: grid;
-    grid-template-columns: repeat(
-        auto-fill,
-        minmax(var(--auto-grid-min-size), 1fr)
-    );
-    grid-gap: 1rem;
-    align-content: center; } */
-
-
-
-
-
-
-
 .logo-img {
     width: 100%;
     max-width: 700px;
     height: auto;
     border-radius: 1em;
-    
+
 }
 
 .img-container {
-
-    margin: 2rem;
-    
-    
+    margin: 3rem;
 }
 
-
+.description {
+    margin: 3rem;
+}
 
 #text {
-    font-size: 10vh;
+    font-size: 9vh;
     margin-top: 30px;
 }
 
@@ -64,7 +39,7 @@ h2 {
     text-transform: uppercase;
     font-weight: 700;
     color: chocolate;
-    
+
 }
 
 .home-page {
@@ -88,11 +63,11 @@ h2 {
 /* typewriter effect */
 .typewriter p {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .10em solid orange; /* The typwriter cursor */
+    border-right: .10em solid rgba(210, 105, 30, 0.678); /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: 1px; /* Adjust as needed */
-    animation: 
+    animation:
         typing 2.5s steps(30, end),
         blink-caret .7s step-end infinite;
 }
@@ -102,22 +77,35 @@ h2 {
     from { width: 0 }
     to { width: 100% }
 }
-  
+
 /* The typewriter cursor effect */
 @keyframes blink-caret {
     from, to { border-color: transparent }
-    50% { border-color: rgba(165, 105, 27, 0.918); }
+    50% { border-color: chocolate; }
 }
 
 /* .img-container, .description {
-    
+
 } */
 /* SOCIAL ICONS */
 
 
 @media all and (min-width: 768px) {
 
-    .img-container {
-        margin-top: 8rem;
-    }
+    
+    /* .social-container .fa {
+        color: chocolate;
+        padding: 15px;
+
+        width: 18px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        border-radius: 50%;
+        border: 1px solid black;
+    } */
+
+
+
+
 }

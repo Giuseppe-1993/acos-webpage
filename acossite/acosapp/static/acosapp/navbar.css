@@ -2,7 +2,7 @@
     --navcolor: rgb(255, 255, 255);
     --themecolor1: #eae7dccc;
     --themecolor3:rgba(206, 121, 60, 0.335);
-    --themecolor31: #cebda2a8;
+    --themecolor31: #e27c60d3;
     --themecolor4: #ECECEC;
     --buttoncolor: #5C2018;
     --offwhite: #FAF9F6;
@@ -24,12 +24,12 @@
 
 /* When scrolling */
 .scrolling-active {
-    background: var(--themecolor31);
-    box-shadow: 0 1px 1rem rgba(0, 0, 0, 0.685);
+    background: var(--offwhite);
+    box-shadow: 0 1px 1rem rgba(0, 0, 0, 0.5);
 }  
 
 
-
+/* Bar sticks to the top when scrolling */
 .sticky + .content {
     padding-top: 60px;
 }
@@ -95,6 +95,7 @@ a:hover {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    /* justify-content: center; */
 }
 
 
@@ -176,8 +177,6 @@ a:hover {
         background: var(--buttoncolor);
         color: white;
         border-radius: 50em;
-        
-       
     }
 
     .toggle {
@@ -195,7 +194,7 @@ a:hover {
 }
 
 /* Desktop Menu */
-@media all and (min-width: 768px) {
+@media all and (min-width: 1278px) {
 
 
     .menu {
@@ -243,16 +242,32 @@ a:hover {
         
     }
 
-    /* .menu li.button {
-        padding-right: 0;
-    } */
-
     .item.button a {
         padding: 0;
     }
         
 
-    /* add the style to make this a dropdown button */
+    /* SOCIAL ICONS */
+
+    .social-container {
+        position: absolute;
+        left: +40%;
+    }        
+
+    .social-container .fa {
+        padding: 0 10px;
+        font-size: 22px;
+        
+    
+    }
+
+
+    .social-container .fa:hover {
+        background: whitesmoke;
+        color: chocolate;
+    }
+
+
     .item.button a {
        
         border-radius: 0;
@@ -261,19 +276,22 @@ a:hover {
         color: black;
     }
 
-    /* .item:hover {
-        border-bottom: 3px solid #5C2018;
-        background: #5c20184d;
-    } */
-
     .item {
        height: fit-content;
     }
     
 
     .item a:hover, .item a:active {
-        color: #5c2018c2;
+        color: chocolate;
+        
         
     }
 
+}
+
+@media all and (min-width: 1620px) {
+    /* .social-container {
+        background: chartreuse;
+        
+    } */
 }
