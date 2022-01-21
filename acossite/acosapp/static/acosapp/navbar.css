@@ -117,7 +117,7 @@ a:hover {
     display: none;
 }
 
-/* javascript is needed to add this class dynamically to all items when we click on the hamburger menu*/
+/* javascript is needed to add these class dynamically to all items when we click on the hamburger menu*/
 .item.active {
     display: block;
 }
@@ -152,6 +152,7 @@ a:hover {
     top: -5px;
 }
 
+/*  hide social container when smaller screen width */
 /*  Tablet Menu */
 
 @media all and (min-width: 368px) {
@@ -183,6 +184,11 @@ a:hover {
         order: 2;
     }
 
+    .logo a {
+        font-size: 35px;
+        margin-left: 1rem;
+    }
+
     .button a:hover {
         transition: all .25s;
         background: white;
@@ -194,7 +200,7 @@ a:hover {
 }
 
 /* Desktop Menu */
-@media all and (min-width: 1278px) {
+@media all and (min-width: 1357px) {
 
 
     .menu {
