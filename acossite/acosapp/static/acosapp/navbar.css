@@ -6,7 +6,7 @@
     --themecolor4: #ECECEC;
     --buttoncolor: #5C2018;
     --offwhite: #faf9f6d7;
-
+    
     --mobile-logo-size: 15px;
     --mobile-button-size: 10px;
 }
@@ -155,7 +155,26 @@ a:hover {
 /*  hide social container when smaller screen width */
 /*  Tablet Menu */
 
-@media all and (min-width: 368px) {
+@media all and (min-width: 320px) {
+
+    .social-container {
+        display: flex;
+        justify-content: center;
+    }        
+
+    .social-container .fa {
+        padding: 0 10px;
+        font-size: 22px;
+        
+    
+    }
+
+
+    .social-container .fa:hover {
+        background-color: white;
+        color: rgb(219, 107, 26);
+    }
+
     .menu {
         justify-content: center;
 
@@ -185,7 +204,7 @@ a:hover {
     }
 
     .logo a {
-        font-size: 35px;
+        font-size: 20px;
         margin-left: 1rem;
     }
 
@@ -255,9 +274,9 @@ a:hover {
 
     /* SOCIAL ICONS */
 
-    .social-container {
-        position: absolute;
-        left: +40%;
+    /* .social-container {
+        display: flex;
+        justify-content: center;
     }        
 
     .social-container .fa {
@@ -271,7 +290,7 @@ a:hover {
     .social-container .fa:hover {
         background-color: white;
         color: rgb(219, 107, 26);
-    }
+    } */
 
 
     .item.button a {

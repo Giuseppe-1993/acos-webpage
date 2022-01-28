@@ -1,3 +1,7 @@
+:root {
+    --auto-grid-min-size: 50vh;
+}
+
 * {
     font-family: "Inter", sans-serif;
     font-size: 1rem;
@@ -12,10 +16,9 @@
 
 .logo-img {
     width: 100%;
-    max-width: 700px;
+    max-width: 800px;
     height: auto;
     border-radius: 1em;
-
 }
 
 .img-container {
@@ -23,7 +26,7 @@
 }
 
 #text {
-    font-size: 10vh;
+    font-size: 9vh;
     margin-top: 30px;
 }
 
@@ -50,8 +53,6 @@
 
 .autogrid {
     display: grid;
-    --auto-grid-min-size: 42rem;
-
     display: grid;
     grid-template-columns: repeat(
         auto-fill,
@@ -60,10 +61,6 @@
     grid-gap: 1rem;
     align-content: center;
     justify-content: center;
-}
-
-.logo-img {
-    margin-left: 100px;
 }
 
 /* typewriter effect */
@@ -90,8 +87,19 @@
     50% { border-color: chocolate; }
 }
 
+@media all and (min-width: 320px) {
+
+    #text {
+        font-size: 20px;
+        margin: 3rem;
+    }
+
+}
+
 
 @media all and (min-width: 1357px) {
+
+
 
     .description {
         margin: 3rem;
@@ -103,7 +111,5 @@
         margin-top: 30px;
     }
 
-    .img-container {
-        margin-left: 0;
-    }
+    
 }
